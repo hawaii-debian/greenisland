@@ -8,19 +8,39 @@ Build-Depends: debhelper (>= 9), cmake,
  qtbase5-dev,
  libgegl-dev,
  libwayland-dev,
+ qtdeclarative5-dev,
+ libqt5waylandclient5-dev,
+ libwayland-dev,
+ qtwayland5,
+ libsystemd-dev,
+ libegl1-mesa-dev,
+ libxkbcommon-dev,
+ qtbase5-private-dev
 Standards-Version: 3.9.5
 Section: libs
 Homepage: https://github.com/greenisland/greenisland
 
-Package: greenisland-dev
+Package: libgreenisland-dev
 Section: libdevel
 Architecture: any
-Depends: greenislandBROKEN (= ${binary:Version}), ${misc:Depends}
+Depends: libgreenisland0 (= ${binary:Version}), ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
-#Package: greenislandBROKEN
-#Architecture: any
-#Depends: ${shlibs:Depends}, ${misc:Depends}
-#Description: <insert up to 60 chars description>
-# <insert long description, indented with spaces>
+Package: qml-plugin-greenisland
+Architecture: any
+Depends: libgreenisland0 (= ${binary:Version}), ${misc:Depends}
+Description: blah
+ blah
+
+Package: libgreenisland0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: greenisland
+Architecture: any
+Depends: libgreenisland0 (= ${binary:Version}), ${misc:Depends}
+Description: blah
+ blah
