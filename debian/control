@@ -1,0 +1,26 @@
+Source: greenisland
+Priority: optional
+Maintainer: Rohan Garg <shadeslayer@solembum>
+Build-Depends: debhelper (>= 9), cmake,
+ extra-cmake-modules,
+ qtbase5-dev-tools,
+ libkf5screen-dev,
+ qtbase5-dev,
+ libgegl-dev,
+ libwayland-dev,
+Standards-Version: 3.9.5
+Section: libs
+Homepage: https://github.com/greenisland/greenisland
+
+Package: greenisland-dev
+Section: libdevel
+Architecture: any
+Depends: greenislandBROKEN (= ${binary:Version}), ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+#Package: greenislandBROKEN
+#Architecture: any
+#Depends: ${shlibs:Depends}, ${misc:Depends}
+#Description: <insert up to 60 chars description>
+# <insert long description, indented with spaces>
