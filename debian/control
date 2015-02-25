@@ -15,7 +15,8 @@ Build-Depends: debhelper (>= 9), cmake,
  libsystemd-dev,
  libegl1-mesa-dev,
  libxkbcommon-dev,
- qtbase5-private-dev
+ qtbase5-private-dev,
+ pkg-kde-tools
 Standards-Version: 3.9.5
 Section: libs
 Homepage: https://github.com/greenisland/greenisland

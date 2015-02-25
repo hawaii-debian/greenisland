@@ -1,3 +1,3 @@
 #!/usr/bin/make -f
 %:
-	dh $@ --fail-missing
+	dh $@ --fail-missing --with kf5
