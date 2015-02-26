@@ -28,7 +28,7 @@ Depends: libgreenisland0 (= ${binary:Version}), ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
-Package: qml-plugin-greenisland
+Package: qml-module-greenisland
 Architecture: any
 Depends: libgreenisland0 (= ${binary:Version}), ${misc:Depends}
 Description: blah
@@ -42,6 +42,8 @@ Description: <insert up to 60 chars description>
 
 Package: greenisland
 Architecture: any
-Depends: libgreenisland0 (= ${binary:Version}), ${misc:Depends}
+Depends: libgreenisland0 (= ${binary:Version}),
+ qml-module-greenisland,
+ ${misc:Depends}
 Description: blah
  blah
